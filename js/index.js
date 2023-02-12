@@ -9,6 +9,6 @@ document.getElementById('btn-submit').addEventListener('click', function(){
         window.location.href = 'inter_index.html';
     }
     else{
-        alert('Invalid E-mail Or password')
+        alert('Invalid E-mail Or Password')
     }
 }) 

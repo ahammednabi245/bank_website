@@ -11,19 +11,19 @@
     <title>ARFAN BANK</title>
 </head>
 
-<body>
+<body class="bg-slate-200">
     <header>
-        <h1 class="text-center text-7xl font-serif mt-20 font-extrabold"> WelCome to <span class="text-sky-500"> ARFAN
+        <h1 class="text-center text-7xl font-serif mt-20 font-extrabold "> WelCome to <span class="text-sky-500"> ARFAN
             </span> Bank</h1>
     </header>
 
 
-    <main>
-        <section class="mt-12">
-            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto text-white">
+    <main class="bg-sky-100 rounded-lg w-9/12 mx-auto">
+        <section class="mt-12 ">
+            <div class="grid md:grid-cols-1 lg:grid-cols-3  gap-6 py-8 w-9/12 mx-auto text-white">
                 <div class="bg-cyan-400 p-8 rounded-lg shadow-lg">
                     <h4 class="text-2xl">Deposit</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2  class="text-5xl">$<span id="deposit-total">00</span></h2>
                 </div>
                 <div class="bg-cyan-600 p-8 rounded-lg shadow-lg">
                     <h4 class="text-2xl">Withdraw</h4>
@@ -31,10 +31,27 @@
                 </div>
                 <div class="bg-sky-600 p-8 rounded-lg shadow-lg">
                     <h4 class="text-2xl">Balance</h4>
-                    <h2 class="text-5xl">$00</h2>
+                    <h2 class="text-5xl">$500</h2>
+                </div>
+            </div>
+        </section>
+        <!-- Deposit and Withdraw -->
+
+        <section class="mt-12 ">
+            <div class="grid md:grid-cols-1 lg:grid-cols-2  gap-6 pb-8 w-9/12 mx-auto ">
+                <div class="bg-cyan-400 p-8 rounded-lg shadow-lg">
+                    <h4 class="text-4xl text-white">Please Deposit</h4>
+                    <input id="deposit-field"  class="rounded-md w-full px-8 block  mt-4" type="text" name="" placeholder="$ Amount you want to deposit">
+                    <button id="btn-deposit" class="bg-sky-400 hover:bg-sky-500 px-8 py-2 my-4 rounded-md text-white text-xl font-semibold">Deposit</button>
+                </div>
+                <div class="bg-cyan-600 p-8 rounded-lg shadow-lg">
+                    <h4 class="text-4xl text-white">Please Withdraw</h4>
+                    <input class="rounded-md w-full px-8 block   mt-4" type="text" name="" id="user-email" placeholder="$ Amount you want to withdraw">
+                    <button id="btn-withdraw" class="bg-sky-400 hover:bg-sky-500 px-8 py-2 my-4 rounded-md text-white text-xl font-semibold">Withdraw</button>
                 </div>
 
             </div>
+
         </section>
     </main>
 
@@ -44,7 +61,7 @@
     </footer>
 
 
-    <script src="js/index.js"></script>
+    <script src="js/inter_index.js"></script>
 </body>
 
 </html>
