@@ -5,7 +5,7 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     const passwordField = document.getElementById('user-password');
     const password = passwordField.value;
     // do not use just see.
-    if(email === 'name@gmail.com' && password === 'secret'){
+    if(email  && password ){
         window.location.href = 'inter_index.html';
     }
     else{
